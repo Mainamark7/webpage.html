@@ -1,0 +1,12 @@
+body {background-image: url("landingimage.jpg");
+background-size: 100%;}
+
+.info {
+    border: 1px outset red;
+    background-color: 
+    lightgreen;    
+    text-align: center;
+    color: black;
+  }
+  
+

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="landing.css">
     <meta charset="utf-8"/>
     <title>MARIKITI
     </title> 
@@ -12,7 +13,7 @@
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
 }
 
 .topnav a {
@@ -35,7 +36,8 @@
 } 
 h1 {text-align: center; background-color: green; font-style: italic;color: yellow;}
 h2 {text-align: center; background-color: green; font-style: italic;color: yellow;}
-p {text-align: center;}
+p {text-align: center;
+color: #f2f2f2;}
 div {text-align: center;}
 .footer {
    position: fixed;
@@ -46,9 +48,41 @@ div {text-align: center;}
    color: white;
    text-align: center;
 }
+input[type=text], select {
+  width: 10%;
+  padding: 5px 10px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 0px;
+}
 </style>
 </head>
 <body>
+
+  
     <h1>MARIKITI ONLINE</h1>
     <h2><q>Fresh from the farm to your kitchen</q></h2>
     <div class="topnav">
@@ -56,32 +90,42 @@ div {text-align: center;}
         <a href="C:\Users\HOME\Downloads\webpage.html\contacts.html">Contact</a>
         <a href="C:\Users\HOME\Downloads\webpage.html\about.html">About</a>
       </div>
-
-      </div>
-     
-      
-
-
-
-<img src="market.jpg"
-width="33.3%"
-height="200px" align="left"/>
-<img src="chicken.jpg"
-width="33.3%"
-height="200px" align="center"/>
-<img src="animal products.jpeg"
-width="33.3%"
-height="200px" align="right"/>
-
-<p><strong>Marikiti</strong> is the pioneer web market that directly connects farmers to customers interested in their
+     <div class="info">
+      <p style="color: black;"><strong><span style="color: brown;"><em>MARIKITI<em></span></strong> <b>is the pioneer web market that directly connects farmers to customers interested in their
 variety of farm produce which are mainly crops, animal products and livestock. We make it easy for both the producer and
 the end user to find each other conviniently on this platform so that they are able to interact, negotiate and transact.
 We eliminate the unscrupulous middlemen/brokers who are  not only known to extort farmers but are also opportunists
-who avail farm produce to buyers at exorbitant prices.</p>
-
+who avail farm produce to buyers at exorbitant prices. You can join the Marikiti community and 
+benefit from the infinite network of producers and cosumers by registering on the form below. </b></p>
+     </div>
 <div class="footer">
   <p> copyright 2023 by Mark M.M. All rights reserved.</p>
 </div>
+<div>
+  <form action="/action_page.php">
+    <label>Please enter your details to receive registration form in your email.</label> <br>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email.."
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="region">Region</label>
+    <select id="region" name="region">
+      <option value="nairobi">Nairobi</option>
+      <option value="central">Central</option>
+      <option value="eastern">Eastern</option>
+      <option value="neastern">North Eastern</option>
+      <option value="nyanza">Nyanza</option>
+      <option value="western">Western</option>
+      <option value="coastal">Coastal</option>
+      <option value="rvalley">Rift Valley</option> 
+      </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
 </body>
 </html> 
